@@ -1,0 +1,43 @@
+@import url('../css/clash-display.css');
+@import url('../css/zodiak.css');
+
+:root{
+  font-size:20px;
+}
+
+body {
+  font-family: 'Zodiak-Variable';
+  font-variation-settings: 'wght' 300.0;
+  max-width:35em;
+  margin-left:2em;
+  margin-right:2em;
+  background-color:#EFF2EA;
+}
+
+h1{
+  font-family: 'ClashDisplay-Variable', Helvetica, Arial;
+  font-variation-settings: 'wght' 666.0;
+  font-size: 8em;
+  line-height:.8em;
+  color:#ffffff;
+}
+
+header a {
+  background-color:#FFFFFF;
+  text-decoration:none;
+  color:#ffff32;
+}
+
+small {
+  font-family: courier;
+  font-size: .6em;
+}
+
+::marker {
+  font-size: .6em;
+}
+
+hr {
+  border-top: 5px solid black;
+  margin-top: 2em;
+}
