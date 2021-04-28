@@ -65,20 +65,48 @@
 				<summary>Answer</summary>Github is free because your repo is public, so you’re a brand ambassador for them as a hub for open source software. It’s unlimited everything. But you have to pay for private repositories.
 			</details><br>
 		</li>
-		<li>Is there any way to commit/publish directly from Atom? I seem to have found a way to commit, but no way to publish. Also seems like you don&rsquo;t get the nice visual of what changes were made that you get in the GitHub app. Seems like the
-			GitHub app is a weird extra step in the process, but I guess I can learn to love it!<br><br>
-			<details>
-				<summary>Answer</summary>Atom’s github panel is buggy and I can’t get it to work either! If you can, then that would cut out the need for Github Desktop
-			</details><br>
-		</li>
-		<li>I&rsquo;ve read that &lt;div&gt; should be avoided. I know I&rsquo;ve used this in the past, but it sounds like this is an antiquated element. This may be a loaded question, but what do we use instead? Just as many descriptive elements as
-			possible? Is &lt;box&gt; relevant? I would assume that the elements we choose in HTML wind up being what CSS looks for when styling, so being precise with our naming is probably super important.</li><br><br>
-		<li>If I have recurring elements I want on multiple pages, is there an easy way to write code in one place and have it propagate to other pages? Case in point: my &lt;header&gt; element up top here.</li><br><br>
-		<li>Ethically, how acceptible is it to copy others&rsquo; code? There is no doubt a lot of learning and “standing on the shoulders of giants” out there, but at what point is something copyright infringement?</li><br><br>
-		<li>I've been really curious about using <a href="https://lottiefiles.com" target="_blank">Lottie</a> as a way to easily inject animations on the web. In reading about using the files, I see it uses .JSON (what is .JSON, even?) and either
-			requires linking a javascript library or (I think) basically linking to some external js script. In the spirit of avoiding javascript for this class, can we do just as cool things with CSS animations?</li><br><br>
-		<li>Are there any handy ways to ensure our pages don't get too long? Pagination, lazy load, anything else? Can we automate this in HTML / CSS? (Thinking of blogs that only display a few items at a time.)</li>
-	</ol>
+			<li>I&rsquo;ve read that &lt;div&gt; should be avoided. I know I&rsquo;ve used this in the past, but it sounds like this is an antiquated element. This may be a loaded question, but what do we use instead? Just as many descriptive elements as
+  possible? Is &lt;box&gt; relevant? I would assume that the elements we choose in HTML wind up being what CSS looks for when styling, so being precise with our naming is probably super important.<br><br>
+  <details>
+    <summary>Answer</summary>
+    <code>div</code> doesn't have semantic meaning, but it will still work if you use it. The cool thing about HTML and CSS is that old code continues to work, even as the language continues to change. I'm writing a lesson on <a
+      href="https://github.com/meewgumi/Coding-For-Designers/blob/main/Tutorials/Semantic%20Elements%20Review.md">semantic meaning</a> for next week.
+  </details><br>
+</li>
+<li>If I have recurring elements I want on multiple pages, is there an easy way to write code in one place and have it propagate to other pages? Case in point: my &lt;header&gt; element up top here.<br><br>
+  <details>
+    <summary>Answer</summary>
+    <p>If you're tired of copy + pasting code, you'll need to use a backend language of some sort. Pure HTML & CSS is all manual, all copy + paste. You can try using Jekyll (based on Ruby) in Github Pages to make <a
+        href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll">custom page templates</a>. What you're talking about is called an <a
+        href="https://jekyllrb.com/docs/step-by-step/05-includes/">include</a> and it could be useful to learn after this class, especially if you're interested in digital garden sites. Lots of them use Jekyll + Ruby (hosted on Netlify) to power
+      their gardens.</p>
+    <p>For the rest of this class, please bear with us as we copy + paste manually and learn styling techniques! Unfortunately we don't have time to cover backend languages!</p>
+  </details><br>
+</li>
+<li>Ethically, how acceptible is it to copy others&rsquo; code? There is no doubt a lot of learning and “standing on the shoulders of giants” out there, but at what point is something copyright infringement?<br><br>
+  <details>
+    <summary>Answer</summary>
+    <p>If you're borrowing the idea of a <code>border-radius</code> on a photo, that's not stealing. If you download a company's full HTML & CSS, then change their name to your name and sell it as a custom theme, that's stealing intellectual
+      property.</p>
+    <p>I usually like to give credit for cool hacks using HTML or CSS comments. And I always, always, edit the code to make it my own instead of just copy + pasting it exactly from someone else's site.</p>
+  </details><br>
+</li>
+<li>I've been really curious about using <a href="https://lottiefiles.com" target="_blank">Lottie</a> as a way to easily inject animations on the web. In reading about using the files, I see it uses .JSON (what is .JSON, even?) and either
+  requires linking a javascript library or (I think) basically linking to some external js script. In the spirit of avoiding javascript for this class, can we do just as cool things with CSS animations?<br><br>
+  <details>
+    <summary>Answer</summary>
+    JSON is most commonly seen as the <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON">structured data</a> that an API outputs from a database query. Not sure how this can be used for animation, but sounds interesting.
+  </details><br>
+</li>
+<li>Are there any handy ways to ensure our pages don't get too long? Pagination, lazy load, anything else? Can we automate this in HTML / CSS? (Thinking of blogs that only display a few items at a time.)<br><br>
+  <details>
+    <summary>Answer</summary>
+    Lazy load is a javascript technique. Automatic pagination is created through a backend system, usually a database CMS like Wordpress or a flat file CMS like Kirby or Bludit. In our vanilla HTML/CSS world, we'll have to do all the content
+    splitting manually.
+
+  </details><br>
+</li>
+		</ol>
 	<br>
 	<hr>
 	<h2 id="week2">Week 2</h2>
