@@ -24,7 +24,25 @@ section {
   line-height: 1.5em;
 }
 
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
 
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotator {
+  position: absolute;
+  margin: auto;
+  /* transform-origin: 49% 50%; */
+  color:pink;
+  font-size: 8em;
+  mix-blend-mode:color-burn;
+  animation: rotate360 8000ms linear infinite;
+}
 
 header {
   position: fixed;
@@ -66,7 +84,7 @@ h1 {
   font-variation-settings: 'wght'666.0;
   font-size: 6.66em;
   line-height: .8em;
-  color: black;
+  color:orange;
   margin-top: 1.2em;
   margin-bottom: 0.4em;
   /* mix-blend-mode: difference; */
@@ -98,10 +116,20 @@ ul li{
   margin-bottom:1em;
 }
 
-ul li::marker {
-  color: green;
-  /* list-style-type: square; */
+ul li a{
+  text-decoration:none;
+  color:black;
+  font-variation-settings: 'wght'500.0;
 }
+
+ul li a:hover{
+  cursor:e-resize;
+}
+
+/* ul li::marker {
+  color: black;
+
+} */
 
 hr {
   border-top: .5em solid black;
