@@ -10,6 +10,7 @@ body {
   border: 1em solid white;
   margin: 0;
   padding-bottom: 2em;
+  -webkit-font-smoothing: antialiased;
 }
 
 section {
@@ -45,6 +46,8 @@ section {
 }
 
 header {
+  display:flex;
+  flex-flow: row wrap;
   position: fixed;
   top: 4em;
   width: 100%;

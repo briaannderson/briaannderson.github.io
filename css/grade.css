@@ -1,11 +1,44 @@
 body {
+  margin:0;
   width: 100vw;
   height: 100vh;
-  animation: grade 30s infinite;
-  animation-timing-function:linear;
+  animation: gradient1 30s infinite;
+  animation-timing-function:cubic-bezier();
 }
 
-@keyframes grade {
+.container{
+  /* display: grid; */
+  margin:0;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 20em .5fr;
+  grid-template-rows: 5em 1fr 10em;
+}
+
+.item1{
+  /* border-radius: 30%; */
+  margin:0;
+  animation: gradient2 20s infinite;
+  animation-timing-function:cubic-bezier();
+}
+
+.item2{
+  border-radius: 5%;
+  margin:0;
+  animation: gradient3 40s infinite;
+  animation-timing-function:cubic-bezier();
+}
+
+.item3{
+  border-radius: 30%;
+  margin:0;
+  animation: gradient4 10s infinite;
+  animation-timing-function:cubic-bezier();
+}
+
+
+
+@keyframes gradient1 {
   0% {
     background-color: orange;
   }
@@ -22,3 +55,102 @@ body {
     background-color: orange;
   }
 }
+
+
+@keyframes gradient2 {
+  0% {
+    background-color: green;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: brown;
+  }
+  75%{
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+@keyframes gradient3 {
+  0% {
+    background-color: yellow;
+  }
+  25% {
+    background-color: grey;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75%{
+    background-color: orange;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+@keyframes gradient4 {
+  0% {
+    background-color: blue;
+  }
+  25% {
+    background-color: violet;
+  }
+  50% {
+    background-color: indigo;
+  }
+  75%{
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+/* .flowerbox1{
+  position: absolute;
+  top:10em;
+  margin: auto;
+  animation: rotate360  10s infinite;
+  animation-timing-function:linear steps(12);
+}
+
+.flower1{
+  font-size: 10em;
+  animation: flowergradient1  10s infinite;
+  animation-timing-function: cubic-bezier();
+}
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes flowergradient1 {
+  0% {
+    color: orange;
+  }
+  25% {
+    color: green;
+  }
+  50% {
+    color: blue;
+  }
+  75%{
+    color: brown;
+  }
+  100% {
+    color: orange;
+  }
+} */
