@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+}
+
+/* :root {
+  --delay: -1s;
+} */
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  animation: gradient1 30s infinite;
+  animation-timing-function:cubic-bezier();
+}
+
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(6, 1fr)
+}
+
+.item1{
+  animation: gradient1 20s infinite;
+  animation-timing-function:cubic-bezier();
+}
+
+.item2{
+  animation: gradient1 20s infinite;
+  animation-timing-function:cubic-bezier();
+  animation-delay: -1s;
+}
+
+.item3{
+  animation: gradient1 20s infinite;
+  animation-timing-function:cubic-bezier();
+  animation-delay: -2s;
+}
+
+.item4{
+  animation: gradient1 20s infinite;
+  animation-timing-function:cubic-bezier();
+  animation-delay: -3s;
+}
+
+.item5{
+  animation: gradient1 20s infinite;
+  animation-timing-function:cubic-bezier();
+  animation-delay: -4s;
+}
+
+.item6{
+  animation: gradient1 20s infinite;
+  animation-timing-function:cubic-bezier();
+  animation-delay: -5s;
+}
+
+@keyframes gradient1 {
+  0% {
+    background-color: orange;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: red;
+  }
+  75%{
+    background-color: yellow;
+  }
+  100% {
+    background-color: orange;
+  }
+}
